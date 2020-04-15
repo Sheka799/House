@@ -1,0 +1,65 @@
+.title
+  background: url('../img/banner.jpg') center no-repeat
+  background-size: cover
+  height: 600px
+  padding: 60px 0
+  &-block
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &-info
+      color: $text-color-btn
+      &__item1
+        display: flex
+        flex-direction: column
+        margin-bottom: 200px
+      &__title
+        margin-bottom: 40px
+        font-size: 36px
+        +bold
+      &__material
+        margin-bottom: 40px
+        font-size: 18px
+        +medium
+      &__place
+        font-size: 16px
+      &__item2
+        display: flex
+      &__text
+        margin-right: 100px
+        font-size: 14px
+        +medium
+        &:last-child
+          margin-right: 0
+      &__regular
+        +regular
+        font-size: 12px
+  &-form
+    margin-right: 10px
+    &__content
+      width: 360px
+      height: 240px
+      background: #ffffff
+      position: relative
+      border-radius: 3px
+    &__content:before,
+    &__content:after 
+      content: ""
+      width: 0
+      height: 0
+      position: absolute
+      left: 0
+      border-left: 180px solid transparent
+      border-right: 180px solid transparent
+      border-radius: 3px
+    &__content:before 
+      top: -105px
+      border-bottom: 105px solid #ffffff
+      border-radius: 3px
+    &__content:after 
+      bottom: -105px
+      border-top: 105px solid #ffffff 
+      border-radius: 3px
+        
+
+
