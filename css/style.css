@@ -134,7 +134,7 @@ img {
 }
 
 .section__title {
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .button {
@@ -242,34 +242,116 @@ img {
   margin-right: 10px;
 }
 
-.title-form__content {
-  width: 360px;
-  height: 240px;
-  background: #ffffff;
-  position: relative;
-  border-radius: 3px;
+.title-content {
+  background: url("../img/form.png") center no-repeat;
+  background-size: cover;
+  width: 369px;
+  height: 417px;
+  margin-right: -10px;
 }
 
-.title-form__content:before, .title-form__content:after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: 0;
-  border-left: 180px solid transparent;
-  border-right: 180px solid transparent;
-  border-radius: 3px;
+.title-content__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.title-form__content:before {
-  top: -105px;
-  border-bottom: 105px solid #ffffff;
-  border-radius: 3px;
+.title-content__title {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 35px;
 }
 
-.title-form__content:after {
-  bottom: -105px;
-  border-top: 105px solid #ffffff;
-  border-radius: 3px;
+#title-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input {
+  padding: 17px;
+  text-align: center;
+  border: 1px solid #dcdcdc;
+  border-radius: 7px;
+}
+
+.input-name {
+  margin-bottom: 10px;
+}
+
+.input-phone {
+  margin-bottom: 15px;
+}
+
+.price {
+  margin-bottom: 70px;
+}
+
+.price__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price__item {
+  list-style: none;
+}
+
+.price__link {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #284157;
+  padding: 10px 14px;
+  font-family: 'Geometria Medium', sans-serif;
+}
+
+.active__link {
+  border: 2px solid #284157;
+  border-radius: 5px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.card__title {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.card__description {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.card__button {
+  margin-top: 25px;
 }
 /*# sourceMappingURL=style.css.map */
