@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>House</title>
 </head>
 <body>
@@ -71,29 +72,73 @@
     <div class="container">
       <h2 class="section-title section__title">У нас есть уже готовые проекты </h2>
       <div class="price">
-        <ul class="price__list">
-          <li class="price__item"><a href="" class="active__link price__link">эконом</a></li>
-          <li class="price__item"><a href="" class="price__link">средний</a></li>
-          <li class="price__item"><a href="" class="price__link">премиум</a></li>
-        </ul>
+        <div class="active__link price__link">эконом</div>
+          <div class="price__link">средний</div>
+          <div class="price__link">премиум</div>
       </div>
-      <div class="cards cards__eco">
+      <div class="cards">
         <div class="card">
-          <img src="img\priceHouse\house.jpg" alt="" class="card__img">
+          <img src="img\portfolio/3.jpg" alt="" class="card__img">
           <h4 class="card__title">Проект Дома Навека 1</h4>
           <p class="card__description">Площадь: 102 м2</p>
           <p class="card__description">Размеры: 10х23х5</p>
           <button class="button card__button">Подробнее о проекте</button>
         </div>
         <div class="card">
-          <img src="img\priceHouse\house.jpg" alt="" class="card__img">
+          <img src="img\portfolio/3.jpg" alt="" class="card__img">
           <h4 class="card__title">Проект Дома Навека 1</h4>
           <p class="card__description">Площадь: 102 м2</p>
           <p class="card__description">Размеры: 10х23х5</p>
           <button class="button card__button">Подробнее о проекте</button>
         </div>
         <div class="card">
-          <img src="img\priceHouse\house.jpg" alt="" class="card__img">
+          <img src="img\portfolio/3.jpg" alt="" class="card__img">
+          <h4 class="card__title">Проект Дома Навека 1</h4>
+          <p class="card__description">Площадь: 102 м2</p>
+          <p class="card__description">Размеры: 10х23х5</p>
+          <button class="button card__button">Подробнее о проекте</button>
+        </div>
+      </div>
+      <div class="cards d-none">
+        <div class="card">
+          <img src="img/portfolio/1.jpg" alt="" class="card__img">
+          <h4 class="card__title">Проект Дома Навека 1</h4>
+          <p class="card__description">Площадь: 102 м2</p>
+          <p class="card__description">Размеры: 10х23х5</p>
+          <button class="button card__button">Подробнее о проекте</button>
+        </div>
+        <div class="card">
+          <img src="img\portfolio/1.jpg" alt="" class="card__img">
+          <h4 class="card__title">Проект Дома Навека 1</h4>
+          <p class="card__description">Площадь: 102 м2</p>
+          <p class="card__description">Размеры: 10х23х5</p>
+          <button class="button card__button">Подробнее о проекте</button>
+        </div>
+        <div class="card">
+          <img src="img\portfolio/1.jpg" alt="" class="card__img">
+          <h4 class="card__title">Проект Дома Навека 1</h4>
+          <p class="card__description">Площадь: 102 м2</p>
+          <p class="card__description">Размеры: 10х23х5</p>
+          <button class="button card__button">Подробнее о проекте</button>
+        </div>
+      </div>
+      <div class="cards d-none">
+        <div class="card">
+          <img src="img\portfolio/2.jpg" alt="" class="card__img">
+          <h4 class="card__title">Проект Дома Навека 1</h4>
+          <p class="card__description">Площадь: 102 м2</p>
+          <p class="card__description">Размеры: 10х23х5</p>
+          <button class="button card__button">Подробнее о проекте</button>
+        </div>
+        <div class="card">
+          <img src="img\portfolio/2.jpg" alt="" class="card__img">
+          <h4 class="card__title">Проект Дома Навека 1</h4>
+          <p class="card__description">Площадь: 102 м2</p>
+          <p class="card__description">Размеры: 10х23х5</p>
+          <button class="button card__button">Подробнее о проекте</button>
+        </div>
+        <div class="card">
+          <img src="img\portfolio/2.jpg" alt="" class="card__img">
           <h4 class="card__title">Проект Дома Навека 1</h4>
           <p class="card__description">Площадь: 102 м2</p>
           <p class="card__description">Размеры: 10х23х5</p>
@@ -104,7 +149,7 @@
   </section>
 
   <section class="section portfolio">
-    <div class="container">
+    <div class="container portfolio-container">
       <h2 class="section-title section__title">Мы построим Вам дом по индивидуальному плану<br>разработанному в нашем проектном бюро</h2>
       <p class="section__description">За 19 лет мы разработали более 500 индивидуальных проектов</p>
       <div class="portfolio-slider">
@@ -129,8 +174,11 @@
           <div class="portfolio-slide__overlay"></div>
         </div>
       </div>
+      <button class="carousel-btn prev-carousel" id="test-left"></button><button class="carousel-btn next-carousel" id="test-right"></button>
+    </div>
+    <div class="container portfolio-container__two">
       <p class="section-description">Мы разрабатываем оригинальные,конструктивно сложные проекты и реализуем их</p>
-      <div class="portfolio-slider">
+      <div class="portfolio-slider__two">
         <div class="portfolio-slide">
           <img src="./img/portfolio/1.jpg" alt="" class="portfolio-slide__img">
           <div class="portfolio-slide__overlay"></div>
@@ -152,6 +200,7 @@
           <div class="portfolio-slide__overlay"></div>
         </div>
       </div>
+      <button class="carousel-btn__two prev-carousel-two" id="test-left__two"></button><button class="carousel-btn__two next-carousel-two" id="test-right__two"></button>
       <div class="portfolio-form">
         <h3 class="portfolio-form__title">
           Мы готовы разработать для Вас индивидуальный проект дома по Вашим пожеланиям<br>Либо использовать для строительства Ваш собственный проект
@@ -248,7 +297,7 @@
             <iframe width="470" height="300" src="https://www.youtube.com/embed/FjiP0xVc23U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
-        <div class="director-block">
+        <div class="director-block director-text">
           <h4 class="director-block__name">Евтушенко Дмитрий</h4>
           <p class="director-block__description">Генеральный директор<br>ООО "Дома Навека"</p>
           <p class="director-block__connect">Вы можете напрямую связаться<br>с директором по телефону:</p>
@@ -303,7 +352,81 @@
       </div>
     </div>
   </section>
+  <section class="section question">
+    <div class="container">
+      <h2 class="section-title section__title">Часто задаваемые вопросы</h2>
+      <p class="section__description">На Ваши вопросы ответит Евтушенко Дмитрий</p>
+      <div class="question-list">
+        <div class="question-item">
+          <div class="question-item__number">1.</div><a href="#" class="question-item__text">Как заказать деталь правильно?</a>
+        </div>
+        <div class="question-item">
+          <div class="question-item__number">2.</div><a href="#" class="question-item__text">Что делать, если запчасть не понадобилась?</a>
+        </div>
+        <div class="question-item">
+          <div class="question-item__number">3.</div><a href="#" class="question-item__text">Как долго доставляется деталь?</a>
+        </div>
+        <div class="question-item">
+          <div class="question-item__number">4.</div><a href="#" class="question-item__text">Можете ли Вы установить деталь?</a>
+        </div>
+        <div class="question-item">
+          <div class="question-item__number">5.</div><a href="#" class="question-item__text">Какой транспортной компанией доставляется деталь? </a>
+        </div>
+        <div class="question-item">
+          <div class="question-item__number">6.</div><a href="#" class="question-item__text">Как долго доставляется деталь?</a>
+        </div>
+        <div class="question-item">
+          <div class="question-item__number">7.</div><a href="#" class="question-item__text">Что делать, если запчасть не понадобилась?</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section consultation">
+    <div class="container">
+      <h2 class="section-title section__title consultation-title">Вы не нашли ответа на свой вопрос? Наши специалисты дадут<br>Вам профессиональную консультацию абсолютно бесплатно!</h2>
+      <p class="section__description consultation-description">Для этого оставьте свой номер телефона в форме ниже - мы перезвоним Вам в течение 3 минут</p>
+      <form action="#" id="consultation-form">
+        <input type="text" class="portfolio-input input-name" placeholder="Ваше имя">
+        <input type="text" class="portfolio-input input-phone" placeholder="Ваш телефон">
+        <button class="button portfolio-button" type="submit">Получить бесплатную<br>консультацию</button>
+      </form>  
+      <p class="section__description consultation-description">Или Вы можете перезвонить нам сами по телефону: <a href="tel:+74952042376" class="consultation-tel">+7 (495) 204-23-76</a></p>
+    </div>
+  </section>
 </main>
-  
+  <footer class="footer">
+   <div class="footer-blocks">
+    <div class="footer-map">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A91d60621787feeb74790adca31edf9dd6b9567538224bd4d78016f06686165dd&amp;width=980&amp;height=544&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+    <div class="footer-text">
+      <h2 class="section-title section__title footer-title">Мы можем показать Вам<br>еще больше проектов у нас в офисе!</h2>
+      <p class="section__description footer-description">Приезжайте к нам в гости по адресу:</p>
+      <div class="footer-text__description">
+        <img src="./img/footer/map.png" alt="" class="footer-text__img">
+        <p class="footer-text__text">МКАД 51 км. ТВК<br>“Элит Строй Материалы”<br>павильон L23</p>
+      </div>
+      <div class="footer-text__description">
+        <img src="./img/footer/phone.png" alt="" class="footer-text__img">
+        <p class="footer-text__text">Звоните прямо сейчас:<br><a href="tel:+74952042376" class="consultation-tel">+7 (495) 204-23-76</a></p>
+      </div>
+      <div class="footer-text__description">
+        <img src="./img/footer/clock.png" alt="" class="footer-text__img">
+        <p class="footer-text__text">с 9:00 до 21:00<br>без выходных</p>
+      </div>
+    </div>
+   </div>
+   <div class="container">
+    <div class="footer-logo">
+      <div class="header-block__logo">
+        <img src="./img/logo.png" alt="Logo">
+      </div>
+      <div><span class="text-bold">ДОМА</span>НАВЕКА</div>
+     </div>
+   </div>
+  </footer>
+  <script src="js/style.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/carouselTwo.js"></script>
 </body>
 </html>

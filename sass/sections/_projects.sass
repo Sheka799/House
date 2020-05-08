@@ -1,17 +1,19 @@
 .price
   margin-bottom: 70px
-  &__list
-    display: flex
-    justify-content: center
-    align-items: center
-  &__item
-    list-style: none
+  display: flex
+  justify-content: center
+  align-items: center
   &__link
     font-size: 16px
     text-transform: uppercase
     color: $text-color
     padding: 10px 14px
     +medium
+    cursor: pointer
+    border: 2px solid transparent
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
 .active__link
   border: 2px solid $text-color
   border-radius: 5px
@@ -30,3 +32,5 @@
     font-size: 14px
   &__button
     margin-top: 25px
+.d-none
+  display: none
