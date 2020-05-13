@@ -1,3 +1,4 @@
+const linkPro = () => {
 const price = document.querySelector('.price'),
  link = document.querySelectorAll('.price__link'),
  cards = document.querySelectorAll('.cards');
@@ -25,4 +26,6 @@ const price = document.querySelector('.price'),
      });
    }  
  });
+};
 
+export default linkPro;
